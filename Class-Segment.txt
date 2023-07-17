@@ -1,0 +1,22 @@
+class Segment
+{
+	PVector a;
+	float len;
+	float angle;
+
+	PVector b;
+
+	Segment(float x, float y, float len_, float angle_)
+	{
+		a = new PVector(x, y);
+		len = len_;
+		angle = angle_;
+	}
+
+	void show()
+	{
+		stroke(255);
+		strokeWeight(4);
+		line(a.x,a.y,b.x,b.y)
+	}
+}
